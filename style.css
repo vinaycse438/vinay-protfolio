@@ -1,0 +1,209 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+    body {
+    padding: 0 10px;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+    font-size: 20px;
+    text-decoration: none;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 0 30px;
+    background: linear-gradient(to right, #3498db, #8e44ad)
+
+}
+.navb{
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navb:hover{
+    border: 2px solid white; 
+}
+.img-box{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    
+}
+.about{
+    padding: 60px 20px;
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.img{
+    height: 200px;
+    width: 200px;
+    background-image: url("vinaysaini-removebg-preview.png");
+    background-position: cover;
+    background-size: cover;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.intro{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+.para{
+    padding-top: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Main Section */
+.skill-sec{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 60px 20px;
+    flex-wrap: wrap;   
+    background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+
+.skill,
+.project,
+.education{
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 15px;
+    background-color: white;
+
+}
+
+
+.skill h2,
+.project h2,
+.education h2{
+    margin-bottom: 15px;
+    color: #3498db;
+    text-align: center;
+}
+
+
+ul{
+    padding-left: 20px;
+}
+
+li{
+    margin-bottom: 8px;
+}
+
+.box1 p a{
+    color: black;
+}
+
+.foot{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box2 p{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-left: 30px;
+}
+.box2 input{
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius : 10px ;
+    font-size: 15px;
+}
+
+.box1{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.box2{
+    height: 400px;
+    width: 500px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 20px;
+}
+
+button{
+    margin-left: 30px;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    color: white;
+    background-color:#8e44ad;
+    border-radius: 30px;
+}
+
+#mes{
+    height: 100px;
+}
+
+.education p{
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px){
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .box1 {
+        height: auto;              /* fixed height hata do */
+        padding: 15px;
+        font-size: 16px;           /* thoda small text */
+        justify-content: center;   /* better alignment */
+        gap: 10px;                 /* spacing */
+    }
+
+      .box2 {
+        width: 90%;          /* screen ke according adjust hoga */
+        height: auto;        /* fixed height hata do */
+        padding: 20px;
+        margin: 0 auto;      /* center align */
+    }
+} 
+
